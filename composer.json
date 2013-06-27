@@ -1,0 +1,25 @@
+{
+    "name": "teamonetickets/razorgator-php",
+    "type": "library",
+    "description": "PHP Client Library for the Razorgator Fullfilment API.",
+    "keywords": ["library", "Razorgator", "Fullfilment", "API", "ticket"],
+    "homepage": "https://github.com/teamonetickets/razorgator-php",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "J Cobb"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework1": ">=1.12"
+    },
+    "autoload": {
+        "psr-0": { "Razorgator": "library/" }
+    },
+    "support": {
+        "issues": "https://github.com/teamonetickets/razorgator-php/issues",
+        "wiki": "https://github.com/teamonetickets/razorgator-php/wiki",
+        "source": "https://github.com/teamonetickets/razorgator-php"
+    }
+}
