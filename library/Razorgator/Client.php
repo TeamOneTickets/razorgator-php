@@ -448,13 +448,13 @@ class Client
     /**
      * Get a Purchase Order (Base64 encoded) and Purchase Order ID
      *
+     * @param int $purchaseOrderId The purchase order id
      * @param int $orderId The order id
      * @param string $orderToken The unique order token associated with the order
-     * @param int $purchaseOrderId The purchase order id
      * @throws Client\Exception
      * @return stdClass
      */
-    public function getPurchaseOrder($orderId, $orderToken, $purchaseOrderId)
+    public function getPurchaseOrder($purchaseOrderId, $orderId, $orderToken)
     {
         $endPoint = 'GetPurchaseOrder';
 
@@ -489,13 +489,13 @@ class Client
     /**
      * Get a Purchase Order as a PDF file
      *
+     * @param int $purchaseOrderId The purchase order id
      * @param int $orderId The order id
      * @param string $orderToken The unique order token associated with the order
-     * @param int $purchaseOrderId The purchase order id
      * @throws Client\Exception
      * @return string (The PDF file of the Purchase Order)
      */
-    public function downloadPurchaseOrder($orderId, $orderToken, $purchaseOrderId)
+    public function downloadPurchaseOrder($purchaseOrderId, $orderId, $orderToken)
     {
         $endPoint = 'DownloadAirbill';
 
